@@ -1,6 +1,3 @@
-This ReadMe file is just for me to know the basic commands for git commit and ec... :
-
-
 PS C:\Users\Yosef\Web\parking_api> git --version
 git version 2.43.0.windows.1
 PS C:\Users\Yosef\Web\parking_api> git status   
@@ -139,4 +136,21 @@ remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
 To https://github.com/Yosefg1/Parking_Api.git
    40b00bb..cf84928  main -> main
 branch 'main' set up to track 'origin/main'.
+PS C:\Users\Yosef\Web\parking_api> git branch -r
+  origin/main
+PS C:\Users\Yosef\Web\parking_api> git fetch https://github.com/Yosefg1/Parking_Api.git
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 2.71 KiB | 163.00 KiB/s, done.
+From https://github.com/Yosefg1/Parking_Api
+ * branch            HEAD       -> FETCH_HEAD
+PS C:\Users\Yosef\Web\parking_api> git pull https://github.com/Yosefg1/Parking_Api.git 
+From https://github.com/Yosefg1/Parking_Api
+ * branch            HEAD       -> FETCH_HEAD
+Updating cf84928..3909e81
+Fast-forward
+ README.md | Bin 4484 -> 5961 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
 PS C:\Users\Yosef\Web\parking_api> 
