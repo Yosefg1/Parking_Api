@@ -9,16 +9,16 @@ export class CarController {
 
     @Post('addCar')
     addCar() {
-        return "New car! "
+        return this.carService.addCar();
     }
     
     @Post('updateCar')
     updateCar() {
-        return "Update car! "
+        return this.carService.updateCar();
     }
 
     @Post('deleteCar')
     deleteCar() {
-        return "Delete car! "
+        return this.carService.deleteCar();
     }
 }

@@ -2,9 +2,15 @@ import { Injectable } from '@nestjs/common';
 
 @Injectable()
 export class CarService {
-    addCar() {}
+    addCar() {
+        return {msg: "New car!"};
+    }
     
-    updateCar() {}
+    updateCar() {
+        return {msg: "Update car!"};
+    }
 
-    deleteCar() {}
+    deleteCar() {
+        return {msg: "Delete car!"};
+    }
 }
