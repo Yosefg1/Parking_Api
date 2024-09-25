@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  parking-db:
+    image: postgres:13
+    ports:
+      - 5434:5432
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 12341
+      POSTGRES_DB: parking
+    networks:
+      - parkingnet
+networks:
+  parkingnet:
