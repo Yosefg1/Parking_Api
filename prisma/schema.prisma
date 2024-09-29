@@ -15,7 +15,7 @@ datasource db {
 
 model Car {
   id                  Int       @id @default(autoincrement()) 
-  createdAt           DateTime  @default(now())
+  entryDate           DateTime  @default(now())
   carHolderName       String
   carModel            String
   licensePlate        String
@@ -24,19 +24,16 @@ model Car {
 
 model Floor {
   id                  Int       @id @default(autoincrement())
-  createdAt           DateTime  @default(now())
   floorLevel          Int 
   totalSpaces         Int
   availableSpaces     Int
-  isAccessible        Boolean?
 }
 
 model Park {
   id                  Int       @id @default(autoincrement())
-  parkedAt           DateTime   @default(now())
+  isAccessible        Boolean?
   carId              Int    
   floorId            Int      
-  checkoutTime       DateTime?
 }
 
 model Payment {
@@ -44,8 +41,8 @@ model Payment {
   createdAt           DateTime  @default(now())
   amount              Float   
   carId               Int      
-  paymentMethod       String?
-  paymentStatus       String?
+  paymentMethod       String?//enum
+  paymentStatus       String?//enum
 }
 
 
